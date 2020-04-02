@@ -1,6 +1,6 @@
-window.onload = function GetData() {
+window.onload = async function GetData() {
   let tempHtml = '';
-  fetch('./receitas.json')
+  await fetch('./receitas.json')
     .then(response => response.json())
     .then(data => {
 
